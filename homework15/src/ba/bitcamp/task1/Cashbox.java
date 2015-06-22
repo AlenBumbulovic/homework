@@ -12,16 +12,16 @@ public class Cashbox {
 	}
 
 	/**
-	 * A method that adds money to the cashbox
+	 * This method adds money to the cashbox
 	 * 
-	 * @param coins
+	 * @param coins - represents the money added to the cashbox
 	 */
 	public void addMoney(int money) {
 		balance += money;
 	}
 
 	/**
-	 * A method that removes all the money from the cashbox
+	 * This method removes all the money from the cashbox
 	 */
 	public int removeAllMoney() {
 		while (balance != 0) {
@@ -32,8 +32,7 @@ public class Cashbox {
 	}
 
 	/**
-	 * This method prints the balance of the cashbox
-	 
+	 * This method prints the balance of the cashbox	 
 	 */
 	public int cashboxBalance() {
 		if (balance == 0) {
