@@ -1,9 +1,11 @@
 package ba.bitcamp.tasks;
 
+import java.io.ObjectInputStream.GetField;
+
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		Employee e = new Employee("Direktor", "female", 2000);
 		Employee e1 = new Employee("Worker", "male", 1800);
 		Employee e2 = new Employee("Worker1", "male", 1700);
@@ -17,13 +19,11 @@ public class Main {
 		System.out
 				.println("The number of female workers in the firm(not including the director) is: "
 						+ f.getNumOfWomen());
-		System.out.println("Sum of all salaries in the firm; " + f.getAllSalary());
+		System.out.println("Sum of all salaries in the firm; "
+				+ f.getAllSalary());
 		f.increaseSalary(200);
-		System.out.println("Sum of all salaries in the firm; " + f.getAllSalary());
-		
-
-	
-
+		System.out.println("Sum of all salaries in the firm; "
+				+ f.getAllSalary());
 
 	}
 

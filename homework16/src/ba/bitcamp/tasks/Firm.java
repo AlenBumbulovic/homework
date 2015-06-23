@@ -3,7 +3,7 @@ package ba.bitcamp.tasks;
 import java.util.Arrays;
 
 public class Firm {
-	
+
 	private String name;
 	private Employee director;
 	private Employee[] workers;
@@ -14,6 +14,7 @@ public class Firm {
 		this.director = director;
 		this.workers = workers;
 	}
+
 	/**
 	 * 
 	 * @return name of the firm
@@ -22,6 +23,7 @@ public class Firm {
 	public String getName() {
 		return name;
 	}
+
 	/**
 	 * 
 	 * @return number of employees in the firm
@@ -30,6 +32,7 @@ public class Firm {
 	public int numberOfEmployees() {
 		return workers.length;
 	}
+
 	/**
 	 * 
 	 * @return the sum of all salaries in the firm
@@ -44,8 +47,10 @@ public class Firm {
 		}
 		return salary;
 	}
+
 	/**
 	 * counts all women working in the firm
+	 * 
 	 * @return number of womens
 	 */
 
@@ -60,18 +65,18 @@ public class Firm {
 		}
 		return counter;
 	}
+
 	/**
 	 * increases the salary
-	 * @param salary 
+	 * 
+	 * @param salary
 	 */
-	public void increaseSalary(double salary){
-		
-		for(int i = 0; i < workers.length; i++){
+	public void increaseSalary(double salary) {
+
+		for (int i = 0; i < workers.length; i++) {
 			workers[i].getMonthSalary() += salary;
 		}
-		
-		
-		
+
 	}
 
 	@Override
@@ -79,6 +84,5 @@ public class Firm {
 		return "Firm [name=" + name + ", director=" + director + ", workers="
 				+ Arrays.toString(workers) + "]";
 	}
-
 
 }
